@@ -10,7 +10,7 @@ const createJestConfig = nextJest({
 const config: Config = {
   coverageProvider: 'v8',
   testEnvironment: 'jsdom',
-  modulePathIgnorePatterns: ["<rootDir>/tests/", "<rootDir>/tests-examples/"],
+  modulePathIgnorePatterns: ['<rootDir>/tests/', '<rootDir>/tests-examples/'],
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1',
   },

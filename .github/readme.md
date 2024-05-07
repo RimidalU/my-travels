@@ -8,7 +8,7 @@
 ![license](https://img.shields.io/github/license/RimidalU/my-travels)
 ![GitHub repo size](https://img.shields.io/github/repo-size/RimidalU/my-travels)
 
-[![Link to App](https://img.shields.io/badge/Visit_the_My_Travels-Click_Here-black?style=plastic&logo=link&logoColor=black&labelColor=white&color=black&link=https://book-swap-0ph3.onrender.com/docs)](#)
+[![Link to App](https://img.shields.io/badge/Visit_the_My_Travels-Click_Here-black?style=plastic&logo=link&logoColor=black&labelColor=white&color=black&link=https://book-swap-0ph3.onrender.com/docs)](https://my-travels-iota.vercel.app/)
 
 ---
 
@@ -53,7 +53,7 @@ This is a repository of my travel stories.
 
 ...
 
-<!-- Run [Live Demo](https://react-rtk-table.netlify.app/) -->
+Run [Live Demo](https://my-travels-iota.vercel.app/)
 
 [//]: # '![tutorial][tutorial]'
 
