@@ -8,6 +8,7 @@
     "start": "next start",
     "test": "jest",
     "lint": "next lint",
+    "lint:types": "tsc --noEmit",
     "prettier": "prettier -w .",
     "pw:codegen": "yarn playwright codegen",
     "pw:test": "yarn playwright test"
