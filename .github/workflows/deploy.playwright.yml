@@ -18,7 +18,7 @@ jobs:
       - name: Run Playwright tests
         run: yarn playwright test
         env:
-          TEST_ENV_BASE_URL: https://my-travels-iota.vercel.app
+          TEST_ENV_BASE_URL: 'https://my-travels-iota.vercel.app'
       - uses: actions/upload-artifact@v3
         if: always()
         with:
