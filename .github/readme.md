@@ -2,7 +2,7 @@
 
 # My travels.
 
-> `My travels` - my travel stories. 
+> `My travels` - my travel stories.
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/RimidalU/my-travels)
 ![license](https://img.shields.io/github/license/RimidalU/my-travels)
@@ -32,10 +32,8 @@
 ![Prisma](https://img.shields.io/badge/Prisma-2D3748.svg?style=for-the-badge&logo=Prisma&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1.svg?style=for-the-badge&logo=PostgreSQL&logoColor=white)
 
-[//]: # (<img src="./assets/home.png" width="600" />)
-
-[//]: # (<img src="./assets/home1.png" width="600" />)
-
+[//]: # '<img src="./assets/home.png" width="600" />'
+[//]: # '<img src="./assets/home1.png" width="600" />'
 
 ## Description
 
@@ -57,7 +55,7 @@ This is a repository of my travel stories.
 
 <!-- Run [Live Demo](https://react-rtk-table.netlify.app/) -->
 
-[//]: # (![tutorial][tutorial])
+[//]: # '![tutorial][tutorial]'
 
 ## Project Status
 
