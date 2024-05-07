@@ -1,6 +1,7 @@
 import { test, expect } from '@playwright/test'
 
 test('MY-TEST', async ({ page }) => {
+  await page.locator("body").click()
   await page.goto('/')
   const page1Promise = page.waitForEvent('popup')
   await page.getByRole('link', { name: 'Docs12 -> Find in-depth' }).click()
