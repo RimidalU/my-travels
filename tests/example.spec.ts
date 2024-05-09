@@ -9,7 +9,7 @@ test('test Docs', async ({ page }) => {
 })
 
 test('test  Templates', async ({ page }) => {
-  await page.goto('https://test12-indol.vercel.app/')
+  await page.goto('https://my-travels-iota.vercel.app/')
   const page1Promise = page.waitForEvent('popup')
   await page.getByRole('link', { name: 'Templates -> Explore starter' }).click()
   const page1 = await page1Promise
