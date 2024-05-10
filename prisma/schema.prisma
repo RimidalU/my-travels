@@ -32,13 +32,13 @@ model User {
   id            String      @id @default(cuid())
   email         String      @unique
   role          ROLE        @default(USER)
-  name          String?
+  name          String
   image         String?
 }
 
 model Event {
   id            String      @id @default(cuid())
-  name          String?
+  name          String
   description   String?
   type          EVENT_TYPE  @default(PLACES)
 }

@@ -10,13 +10,13 @@ type EVENT_TYPE =
 type EventListElement = {
   id: string
   name: string
-  description: string
+  description: string | null
   type: EVENT_TYPE
 }
 
 type CreateEventListElement = {
   name: string
-  description: string
+  description: string | null
   type: EVENT_TYPE
 }
 
