@@ -6,7 +6,7 @@ class EventsRepository {
     (): Promise<EventListElement[]> => dbClient.event.findMany(),
   )
 
-  createEventsList = (
+  createEventsListItem = (
     command: CreateEventsListElementCommand,
   ): Promise<EventListElement> => {
     return dbClient.event.create({
@@ -14,7 +14,7 @@ class EventsRepository {
     })
   }
 
-  removeEventsList = (
+  removeEventsListItem = (
     command: RemoveEventsListElementCommand,
   ): Promise<EventListElement> => {
     return dbClient.event.delete({
