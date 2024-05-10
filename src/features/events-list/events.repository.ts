@@ -1,5 +1,10 @@
 import { dbClient } from '@/shared/lib/db'
 import { cache } from 'react'
+import {
+  CreateEventsListElementCommand,
+  EventListElement,
+  RemoveEventsListElementCommand,
+} from './model/types'
 
 class EventsRepository {
   getEventsList = cache(
