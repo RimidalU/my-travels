@@ -1,25 +1,27 @@
-type EVENT_TYPE =
-  | 'PLACES'
-  | 'HIKING'
-  | 'BICYCLES'
-  | 'KAYAKS'
-  | 'WINTER'
-  | 'CUISINE'
-  | 'OTHER'
+export const eventsTypes = [
+  'PLACES',
+  'HIKING',
+  'BICYCLES',
+  'KAYAKS',
+  'WINTER',
+  'CUISINE',
+  'OTHER',
+] as const
+export type EVENT_TYPE = (typeof eventsTypes)[number]
 
-type EventListElement = {
+export type EventListElement = {
   id: string
   name: string
   description: string | null
   type: EVENT_TYPE
 }
 
-type CreateEventsListElementCommand = {
+export type CreateEventsListElementCommand = {
   name: string
   description: string | null
   type: EVENT_TYPE
 }
 
-type RemoveEventsListElementCommand = {
+export type RemoveEventsListElementCommand = {
   id: string
 }
