@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "prisma generate && next build",
     "start": "next start",
     "test": "jest",
     "lint": "next lint",
@@ -15,7 +15,8 @@
     "pw:codegen": "yarn playwright codegen",
     "pw:test": "yarn playwright test",
     "prepare": "husky install",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "postinstall": "prisma generate"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
