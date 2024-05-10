@@ -1,5 +1,5 @@
 import { eventsRepository } from '@/features/events-list/events.repository'
-import { EventListElement } from '@/features/events-list/ui/event-list-element'
+import { EventListItem } from '@/features/events-list/ui/event-list-item'
 import { revalidatePath } from 'next/cache'
 
 export async function EventList({
@@ -19,7 +19,7 @@ export async function EventList({
   return (
     <div className="flex flex-col gap-3">
       {eventList.map((event) => (
-        <EventListElement
+        <EventListItem
           event={event}
           onDelete={handleRemoveAction.bind(null, event.id)}
           key={event.id}

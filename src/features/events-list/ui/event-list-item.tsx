@@ -12,7 +12,9 @@ import {
   CardTitle,
 } from '@/shared/ui/card'
 
-export function EventListElement({
+import { EventListElement } from '../model/types'
+
+export function EventListItem({
   event,
   onDelete,
 }: {
