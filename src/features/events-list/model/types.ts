@@ -14,12 +14,12 @@ type EventListElement = {
   type: EVENT_TYPE
 }
 
-type CreateEventListElement = {
+type CreateEventsListElementCommand = {
   name: string
   description: string | null
   type: EVENT_TYPE
 }
 
-type RemoveEventListElement = {
+type RemoveEventsListElementCommand = {
   id: string
 }
