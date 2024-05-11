@@ -26,6 +26,7 @@ import { useForm } from 'react-hook-form'
 import { eventsTypes } from '../model/types'
 import { useTransition } from 'react'
 import { createEventAction } from '../actions'
+import { cn } from '@/shared/ui/utils'
 
 const createEventFormSchema = z.object({
   name: z.string(),
@@ -35,8 +36,10 @@ const createEventFormSchema = z.object({
 
 export function CreateEventForm({
   revalidatePagePath,
+  className,
 }: {
   revalidatePagePath: string
+  className?: string
 }) {
   const form = useForm<z.infer<typeof createEventFormSchema>>({
     resolver: zodResolver(createEventFormSchema),
@@ -56,7 +59,7 @@ export function CreateEventForm({
             createEventAction(data, revalidatePagePath)
           })
         })}
-        className="space-y-3"
+        className={cn(className, 'space-y-4')}
       >
         <FormField
           control={form.control}
@@ -79,7 +82,7 @@ export function CreateEventForm({
           control={form.control}
           name="description"
           render={({ field }) => (
-            <FormItem className="w-[250px]">
+            <FormItem>
               <FormLabel>Event description</FormLabel>
               <FormControl>
                 <Textarea placeholder="Event Description" {...field} />
@@ -94,7 +97,7 @@ export function CreateEventForm({
           control={form.control}
           name="type"
           render={({ field }) => (
-            <FormItem className="w-[250px]">
+            <FormItem>
               <FormLabel>Event description</FormLabel>
               <Select onValueChange={field.onChange} defaultValue={field.value}>
                 <FormControl>
