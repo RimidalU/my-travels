@@ -1,0 +1,44 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum ROLE {
+  ADMIN
+  USER
+}
+
+enum EVENT_TYPE {
+  PLACES
+  HIKING
+  BICYCLES
+  KAYAKS
+  WINTER
+  CUISINE
+  OTHER
+}
+
+model User {
+  id            String      @id @default(cuid())
+  email         String      @unique
+  role          ROLE        @default(USER)
+  name          String
+  image         String?
+}
+
+model Event {
+  id            String      @id @default(cuid())
+  name          String
+  description   String?
+  type          EVENT_TYPE  @default(PLACES)
+}
