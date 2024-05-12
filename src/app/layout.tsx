@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 
-import { AppHeader } from '@/widgets/app-header/app-header'
-import { ThemeProvider } from '@/features/theme/theme-provider'
+import { AppProvider } from './_providers/app-provider'
 
 import { cn } from '@/shared/ui/utils'
 
@@ -31,15 +30,7 @@ export default function RootLayout({
           fontSans.variable,
         )}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <AppHeader />
-          {children}
-        </ThemeProvider>
+        <AppProvider>{children}</AppProvider>
       </body>
     </html>
   )

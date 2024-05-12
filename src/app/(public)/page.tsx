@@ -1,4 +1,3 @@
-import { Button } from '@/shared/ui/button'
 import { EventList } from '@/features/events-list/public/events-list'
 import { CreateEventForm } from '@/features/events-list/public/create-event-form'
 
