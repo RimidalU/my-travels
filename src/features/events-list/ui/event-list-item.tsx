@@ -39,7 +39,7 @@ export function EventListItem({
         <p>{event.description}</p>
       </CardContent>
       <CardFooter>
-        <Button disabled={isLoadingRemove} onClick={handleRemove}>
+        <Button type="submit" disabled={isLoadingRemove} onClick={handleRemove}>
           Remove
         </Button>
       </CardFooter>
