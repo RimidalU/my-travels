@@ -5,6 +5,7 @@ import {
   SheetContent,
   SheetHeader,
 } from '@/shared/ui/sheet'
+
 import { Menu } from 'lucide-react'
 
 export function Layout({
@@ -35,10 +36,10 @@ export function Layout({
           </Sheet>
         </div>
 
-        <div className="mr-4 hidden md:flex mr-4">{logo}</div>
+        <div className="mr-4 md:flex">{logo}</div>
         <div className="items-center flex-1 flex">
           <div className="hidden md:flex">{nav}</div>
-          <div className="flex flex-1 items-center justify-end space-x-3 ">
+          <div className="flex flex-1 items-center justify-end space-x-3">
             {actions}
             {profile}
           </div>
