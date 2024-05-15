@@ -3,7 +3,7 @@ import { CreateEventForm } from '@/features/events-list/public/create-event-form
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col p-8">
+    <main className="flex flex-col p-8 flex-1">
       <CreateEventForm revalidatePagePath="/" className="max-w-[300px] mb-10" />
       <EventList revalidatePagePath="/" className="mb-10" />
 
