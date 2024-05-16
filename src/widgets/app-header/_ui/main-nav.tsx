@@ -1,4 +1,8 @@
+'use client'
+
+import { cn } from '@/shared/ui/utils'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 const navLinks = [
   {
@@ -27,19 +31,24 @@ const navLinks = [
     description: 'Blog',
   },
   {
-    id: 5,
+    id: 6,
     link: '/about',
     description: 'About',
   },
 ]
 
 export function MainNav() {
+  const pathname = '/' + usePathname().split('/')[1]
+
   return (
     <nav className="flex items-start md:items-center gap-6 text-sm font-medium flex-col md:flex-row ">
       {navLinks.map((item) => (
         <Link
           key={item.id}
-          className="transition-colors hover:text-foreground/80 text-foreground/60"
+          className={cn(
+            'transition-colors hover:text-foreground/80 text-foreground/60 ',
+            pathname === item.link && 'text-foreground',
+          )}
           href={item.link}
         >
           {item.description}
