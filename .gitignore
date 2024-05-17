@@ -62,3 +62,6 @@ next-env.d.ts
 /playwright/.cache/
 
 .env
+
+# contentlayer
+.contentlayer
