@@ -26,8 +26,8 @@ export function PostsListItem({ post }: { post: PostListElement }) {
           <Image
             src={post.photo}
             alt={post.slug}
-            width={600}
-            height={600}
+            width={300}
+            height={300}
             className="rounded-r-xl"
           />
         )}
