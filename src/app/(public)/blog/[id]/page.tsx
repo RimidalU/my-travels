@@ -1,7 +1,9 @@
-import { allPosts } from 'contentlayer/generated'
 import { notFound } from 'next/navigation'
-import { getMDXComponent } from 'next-contentlayer/hooks'
 import Link from 'next/link'
+
+import { allPosts } from 'contentlayer/generated'
+
+import MarkdownOverride from '@/shared/ui/markdown-override'
 
 function getPostBySlug(slug: string) {
   const post = allPosts.find((post) => post._raw.flattenedPath === slug)
@@ -11,7 +13,6 @@ function getPostBySlug(slug: string) {
 export default function PostPage({ params }: { params: { id: string } }) {
   const post = getPostBySlug(params.id)
 
-  const MDXContent = getMDXComponent(post.body.code)
   return (
     <div className="container py-10 flex-1">
       <Link
@@ -20,8 +21,9 @@ export default function PostPage({ params }: { params: { id: string } }) {
       >
         ⬅ Back to Blog
       </Link>
-
-      <MDXContent />
+      <article className="prose prose-zinc max-w-none prose-a:text-blue-600 dark:prose-invert">
+        <MarkdownOverride>{post.body.raw}</MarkdownOverride>
+      </article>
     </div>
   )
 }
