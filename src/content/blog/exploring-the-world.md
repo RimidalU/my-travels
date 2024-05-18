@@ -1,6 +1,8 @@
 ---
 title: Exploring the World
 description: Exploring the World - A Traveler's Journey
+eventType: OTHER
+photo: 'https://upload.wikimedia.org/wikipedia/commons/4/41/Angkor_Wat.jpg'
 ---
 
 # Exploring the World: A Traveler's Journey

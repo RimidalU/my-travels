@@ -1,6 +1,8 @@
 ---
 title: Discovering Photo
 description: Discovering Photo Spots in Minsk
+eventType: HIKING
+photo: 'https://live.staticflickr.com/7297/9181489738_06e6964eef_b.jpg'
 ---
 
 ### Discovering Photo Spots in Minsk, Belarus

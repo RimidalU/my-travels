@@ -1,6 +1,8 @@
 ---
 title: Belarus
 description: Belarus description
+eventType: PLACES
+photo: 'https://media.istockphoto.com/id/499206036/photo/cityscape-of-minsk-belarus-summer-season-sunset-time.jpg?s=1024x1024&w=is&k=20&c=CrCwoFCxhY_JE6SGnnVoTnCL4jG7eHI1o8L-5NXZjck='
 ---
 
 ### Exploring the Beauty of Belarus: A Traveler's Paradise
