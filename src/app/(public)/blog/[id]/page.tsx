@@ -14,16 +14,16 @@ export default function PostPage({ params }: { params: { id: string } }) {
   const post = getPostBySlug(params.id)
 
   return (
-    <div className="container py-10 flex-1">
+    <main className="container py-10 flex-1">
       <Link
         href="/blog"
-        className="transition-colors hover:text-foreground/80 text-foreground/60 block mb-8"
+        className="transition-colors hover:text-blue-800 text-blue-600 block mb-8"
       >
         ⬅ Back to Blog
       </Link>
-      <article className="prose prose-zinc max-w-none prose-a:text-blue-600 dark:prose-invert">
+      <article className="prose prose-zinc max-w-none prose-a:text-blue-600 hover:prose-a:text-blue-800 dark:prose-invert">
         <MarkdownOverride>{post.body.raw}</MarkdownOverride>
       </article>
-    </div>
+    </main>
   )
 }
