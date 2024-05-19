@@ -2,6 +2,7 @@ import { dbClient } from '@/shared/lib/db'
 import { cache } from 'react'
 import {
   CreateVideoListElementCommand,
+  GetVideoListElementCommand,
   RemoveVideoListElementCommand,
   VideoListElement,
 } from './model/types'
@@ -23,6 +24,16 @@ class VideoRepository {
     command: RemoveVideoListElementCommand,
   ): Promise<VideoListElement> => {
     return dbClient.video.delete({
+      where: {
+        id: command.id,
+      },
+    })
+  }
+
+  getVideoById = (
+    command: GetVideoListElementCommand,
+  ): Promise<VideoListElement | null> => {
+    return dbClient.video.findUnique({
       where: {
         id: command.id,
       },
