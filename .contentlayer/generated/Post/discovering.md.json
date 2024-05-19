@@ -1,0 +1,22 @@
+{
+  "title": "Discovering Photo",
+  "description": "Discovering Photo Spots in Minsk",
+  "photo": "https://live.staticflickr.com/7297/9181489738_06e6964eef_b.jpg",
+  "eventType": "HIKING",
+  "body": {
+    "raw": "\n### Discovering Photo Spots in Minsk, Belarus\n\nWhen exploring Minsk, Belarus, there are several impressive photo spots that capture the essence of the city. Here are some notable locations to visit for photography enthusiasts:\n\n1. **Belarusian Village**\n   ![Belarusian Village](https://live.staticflickr.com/7297/9181489738_06e6964eef_b.jpg)\n\n2. **Belarusian Traditional Costume**\n   ![Belarusian Traditional Costume](https://img.freepik.com/free-photo/young-adults-having-fun-while-folk-dancing_23-2149849680.jpg?size=626&ext=jpg)\n\n3. **Belarusian Landscape**\n   ![Belarusian Landscape](https://www.nationsonline.org/gallery/Belarus/Lake-Strusta-Belarus.jpg)\n\n4. **Victory Square with the Eternal Flame**\n\n   - Source: [No Camera Bag - 5 Photo Spots in Minsk within walking distance](https://nocamerabag.com/blog/photo-spots-in-minsk-belarus)\n\n5. **Gorky Park with Ferris Wheel**\n   - Source: [No Camera Bag - 5 Photo Spots in Minsk within walking distance](https://nocamerabag.com/blog/photo-spots-in-minsk-belarus)\n\nThese spots offer a mix of cultural, natural, and urban settings, providing a diverse range of photography opportunities in Minsk, Belarus.\n",
+    "html": "<h3>Discovering Photo Spots in Minsk, Belarus</h3>\n<p>When exploring Minsk, Belarus, there are several impressive photo spots that capture the essence of the city. Here are some notable locations to visit for photography enthusiasts:</p>\n<ol>\n<li>\n<p><strong>Belarusian Village</strong>\n<img src=\"https://live.staticflickr.com/7297/9181489738_06e6964eef_b.jpg\" alt=\"Belarusian Village\"></p>\n</li>\n<li>\n<p><strong>Belarusian Traditional Costume</strong>\n<img src=\"https://img.freepik.com/free-photo/young-adults-having-fun-while-folk-dancing_23-2149849680.jpg?size=626&#x26;ext=jpg\" alt=\"Belarusian Traditional Costume\"></p>\n</li>\n<li>\n<p><strong>Belarusian Landscape</strong>\n<img src=\"https://www.nationsonline.org/gallery/Belarus/Lake-Strusta-Belarus.jpg\" alt=\"Belarusian Landscape\"></p>\n</li>\n<li>\n<p><strong>Victory Square with the Eternal Flame</strong></p>\n<ul>\n<li>Source: <a href=\"https://nocamerabag.com/blog/photo-spots-in-minsk-belarus\">No Camera Bag - 5 Photo Spots in Minsk within walking distance</a></li>\n</ul>\n</li>\n<li>\n<p><strong>Gorky Park with Ferris Wheel</strong></p>\n<ul>\n<li>Source: <a href=\"https://nocamerabag.com/blog/photo-spots-in-minsk-belarus\">No Camera Bag - 5 Photo Spots in Minsk within walking distance</a></li>\n</ul>\n</li>\n</ol>\n<p>These spots offer a mix of cultural, natural, and urban settings, providing a diverse range of photography opportunities in Minsk, Belarus.</p>"
+  },
+  "_id": "discovering.md",
+  "_raw": {
+    "sourceFilePath": "discovering.md",
+    "sourceFileName": "discovering.md",
+    "sourceFileDir": ".",
+    "contentType": "markdown",
+    "flattenedPath": "discovering"
+  },
+  "type": "Post",
+  "url": "/blog/discovering",
+  "slug": "discovering",
+  "id": "discovering.md"
+}
