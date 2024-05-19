@@ -1,12 +1,14 @@
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 
-import { allPosts } from 'contentlayer/generated'
+import { allPosts, Post } from 'contentlayer/generated'
 
 import MarkdownOverride from '@/shared/ui/markdown-override'
 
 function getPostBySlug(slug: string) {
-  const post = allPosts.find((post) => post._raw.flattenedPath === slug)
+  const post: Post | undefined = allPosts.find(
+    (post) => post._raw.flattenedPath === slug,
+  )
   return post ?? notFound()
 }
 
