@@ -24,3 +24,7 @@ export type CreateVideoListElementCommand = {
 export type RemoveVideoListElementCommand = {
   id: string
 }
+
+export type GetVideoListElementCommand = {
+  id: string
+}
