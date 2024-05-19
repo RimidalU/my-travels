@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 
 import { EventListItem } from './event-list-item'
-import { eventsTypes } from '../model/types'
+import { eventsTypes } from '@/shared/types/types'
 
 const testItem = {
   id: 'id',

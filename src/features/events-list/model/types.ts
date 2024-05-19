@@ -1,13 +1,4 @@
-export const eventsTypes = [
-  'PLACES',
-  'HIKING',
-  'BICYCLES',
-  'KAYAKS',
-  'WINTER',
-  'CUISINE',
-  'OTHER',
-] as const
-export type EVENT_TYPE = (typeof eventsTypes)[number]
+import { EVENT_TYPE } from '@/shared/types/types'
 
 export type EventListElement = {
   id: string

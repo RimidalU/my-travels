@@ -23,10 +23,10 @@ import {
 } from '@/shared/ui/select'
 import { Textarea } from '@/shared/ui/textarea'
 import { useForm } from 'react-hook-form'
-import { eventsTypes } from '../model/types'
 import { useTransition } from 'react'
 import { createEventAction } from '../actions'
 import { cn } from '@/shared/ui/utils'
+import { eventsTypes } from '@/shared/types/types'
 
 const createEventFormSchema = z.object({
   name: z.string(),

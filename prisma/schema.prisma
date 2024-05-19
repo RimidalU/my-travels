@@ -29,16 +29,27 @@ enum EVENT_TYPE {
 }
 
 model User {
-  id            String      @id @default(cuid())
-  email         String      @unique
-  role          ROLE        @default(USER)
-  name          String
-  image         String?
+  id    String  @id @default(cuid())
+  email String  @unique
+  role  ROLE    @default(USER)
+  name  String
+  image String?
 }
 
 model Event {
-  id            String      @id @default(cuid())
-  name          String
-  description   String?
-  type          EVENT_TYPE  @default(PLACES)
+  id          String     @id @default(cuid())
+  name        String
+  description String?
+  type        EVENT_TYPE @default(PLACES)
+}
+
+model Video {
+  id          String     @id @default(cuid())
+  title       String
+  description String?
+  post        String?
+  photo       String
+  video       String
+  date        String
+  type        EVENT_TYPE @default(PLACES)
 }
