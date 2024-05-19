@@ -1,10 +1,11 @@
-import { YouTubeEmbed } from '@next/third-parties/google'
+import { VideoList } from '@/features/video-list/public/video-list'
 
 export default function VideosPage() {
   return (
-    <div className="container py-10 flex-1">
-      VideosPage
-      <YouTubeEmbed videoid="gACJ5_fJeHM" height={600} />
-    </div>
+    <main className="container py-6 flex-1">
+      <div className={'flex flex-col gap-3'}>
+        <VideoList className="" />
+      </div>
+    </main>
   )
 }
